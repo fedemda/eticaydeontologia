@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Cargar sonidos
-    const clickSound = new Audio('../Sitio Etica y Deontologia Profesional/sounds/y2mate.com - Click  Sound Effect HD.mp3'); // Ruta al archivo de sonido de clic
-    const toggleSound = new Audio('../Sitio Etica y Deontologia Profesional/sounds/y2mate.com - Toggle Sound Effect.mp3'); // Ruta al archivo de sonido de cambio de estado
+    const clickSound = new Audio('https://fedemda.github.io/eticaydeontologia/sounds/y2mate.com - Click  Sound Effect HD.mp3'); // Ruta al archivo de sonido de clic
+    const toggleSound = new Audio('https://fedemda.github.io/eticaydeontologia/sounds/y2mate.com - Toggle Sound Effect.mp3'); // Ruta al archivo de sonido de cambio de estado
   
   // Obtener el checkbox de feedback auditivo
   const feedbackSoundCheckbox = document.getElementById('feedback-sound');
