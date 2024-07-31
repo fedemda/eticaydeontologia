@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black; /* Texto predeterminado */
+    font-size: 16px; /* Tamaño de fuente base */
+}
+
+/* Estilos para el ajuste de tamaño de texto */
+body.text-size-small {
+    font-size: 12px; /* Tamaño de fuente pequeño */
+}
+
+body.text-size-medium {
+    font-size: 16px; /* Tamaño de fuente mediano (predeterminado) */
+}
+
+body.text-size-large {
+    font-size: 20px; /* Tamaño de fuente grande */
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea, input[type="text"], select {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0; /* Espacio uniforme arriba y abajo */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho total del elemento */
+    font-size: 1em; /* Tamaño de fuente relativo al tamaño base del body */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Tamaño de fuente relativo al tamaño base del body */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#chat-window {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.chat-message {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+}
+
+.chat-message strong {
+    color: #007bff;
+}
+
+.chat-message em {
+    color: #888;
+}
+
+.translate-section,
+.text-to-speech {
+    resize: none;
+}
+
+.settings-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings-group > div {
+    width: 45%;
+}
+
+#settings-section h2,
+#settings-section h3 {
+    margin-bottom: 0.5em;
+}
+
+#settings-section label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+/* Estilos para alto contraste */
+body.high-contrast {
+    background-color: black;
+    color: white;
+}
+
+body.high-contrast header {
+    background-color: #333; /* Cambia el color de fondo del encabezado */
+}
+
+body.high-contrast section {
+    background-color: #222; /* Cambia el color de fondo de las secciones */
+    color: white; /* Asegúrate de que el texto sea visible */
+}
+
+body.high-contrast textarea, 
+body.high-contrast input[type="text"], 
+body.high-contrast select {
+    background-color: #444; /* Cambia el fondo de los campos de entrada */
+    border: 1px solid #666; /* Cambia el borde para mayor contraste */
+    color: white; /* Asegúrate de que el texto sea visible */
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho total del elemento */
+}
+
+body.high-contrast button {
+    background-color: #555; /* Cambia el color de fondo del botón */
+    color: white; /* Asegúrate de que el texto sea visible */
+}
+
+body.high-contrast button:hover {
+    background-color: #666; /* Cambia el color de fondo del botón en hover */
+}
+
+body.high-contrast #chat-window {
+    border: 1px solid #666; /* Cambia el borde para mayor contraste */
+}
+
+body.high-contrast .chat-message {
+    background-color: #333; /* Cambia el color de fondo del mensaje de chat */
+}
+
+/* Clases para colores de mensajes */
+.message-color-1 {
+    background-color: #e4e4e4; /* Color de fondo para el primer tipo de mensaje */
+}
+
+.message-color-2 {
+    background-color: #d0f0c0; /* Color de fondo para el segundo tipo de mensaje */
+}
+
+
+/* Puedes agregar más colores si lo necesitas */
+
+.chat-message {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+    color: black;
+}
+
+.chat-message:nth-child(odd) {
+    background-color: #d4edda; /* Verde claro */
+}
+
+.chat-message:nth-child(even) {
+    background-color: #fad3c4; /* Gris claro */
+}
+
+input:focus, button:focus, select:focus {
+    outline: 2px solid #007BFF; /* Color de enfoque */
+    outline-offset: 2px;
+  }
+
+  /* Estilo para la sección de ayuda */
+  html, body {
+    height: 100%; /* Asegura que el html y body ocupen el 100% de la altura */
+    margin: 0; /* Quita el margen por defecto */
+  }
+  
+  #help-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto dentro de los elementos */
+    
+    padding: 0 20px; /* Espacio horizontal alrededor del contenido */
+  }
+  
+  #help-section > * {
+    margin: 20px 0; /* Espacio vertical alrededor de los elementos internos */
+  }
+  #help-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #help-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  #help-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  #help-section li {
+    margin-bottom: 8px;
+  }
+  
+  #read-help {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #read-help:hover {
+    background-color: #0056b3;
+  }
+
+  /* Asegura que el tamaño del input se ajuste */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ajusta al 100% del ancho del contenedor padre */
+    max-width: 300px; /* Ancho máximo para controlar el tamaño */
+  }
+  
+  .input-container input[type="text"],
+  .input-container input[type="datetime-local"] {
+    width: 100%; /* Ajusta al 100% del ancho del contenedor */
+    padding: 10px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del elemento */
+    margin-bottom: 10px; /* Espacio debajo del input */
+  }
+  
+  /* Ajusta el tamaño de los botones */
+  #calendar-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0; /* Opcional: Quita el margen para uniformidad */
+    padding-bottom: 10px; /* Opcional: Espacio debajo del título */
+  }
+
+/* Estilo global para la lista en el menú de Ayuda y Tutoriales */
+#help-section ul {
+    list-style-type: disc; /* Asegura que las viñetas sean visibles */
+    padding-left: 20px; /* Espacio a la izquierda para las viñetas */
+    margin: 0; /* Quita el margen de la lista */
+  }
+  
+  /* Estilo para los elementos de la lista */
+  #help-section li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  
