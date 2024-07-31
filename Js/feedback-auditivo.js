@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Cargar sonidos
-    const clickSound = new Audio('https://fedemda.github.io/eticaydeontologia/sounds/y2mate.com - Click  Sound Effect HD.mp3'); // Ruta al archivo de sonido de clic
+    const clickSound = new Audio('https://fedemda.github.io/eticaydeontologia/sounds/y2mate.com%20-%20ClickSound.mp3'); // Ruta al archivo de sonido de clic
     const toggleSound = new Audio('https://fedemda.github.io/eticaydeontologia/sounds/y2mate.com - Toggle Sound Effect.mp3'); // Ruta al archivo de sonido de cambio de estado
   
   // Obtener el checkbox de feedback auditivo
