@@ -26,12 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
     readHelpButton.addEventListener('click', () => {
       const helpText = `
-        Bienvenido a EduAccess. Aquí encontrarás información sobre cómo utilizar las características de la aplicación:
+        Bienvenido a EducAccess. Aquí encontrarás información sobre cómo utilizar las características de la aplicación:
         Configuraciones: Ajusta el tamaño del texto y el tema de alto contraste para mejorar la legibilidad.
         Calendario: Agrega eventos y establece la fecha y hora para que puedas recordar tus actividades.
-        Texto a Voz: Convierte el texto en voz para escuchar el contenido escrito.
+        Texto a Voz: Convierte el texto en voz para escuchar el contenido escrito. También podrás grabar audios y convertirlos a texto.
         Traducción: Traduce texto a diferentes idiomas utilizando el selector de idiomas.
-        Chat: Participa en el chat para comunicarte con otros usuarios.
+        Chat: Participa en el chat para comunicarte con tus compañeros de clase.
       `;
   
       const utterance = new SpeechSynthesisUtterance(helpText);
