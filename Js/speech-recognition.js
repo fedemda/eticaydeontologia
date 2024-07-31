@@ -24,7 +24,12 @@ function initSpeechRecognition() {
   };
 
   document.getElementById('start-recognition').addEventListener('click', () => {
-    recognition.start();
+    try {
+      recognition.start();
+    } catch (error) {
+      console.error('Error al iniciar el reconocimiento de voz:', error);
+      alert('Error al iniciar el reconocimiento de voz: ' + error.message);
+    }
   });
 }
 
