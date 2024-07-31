@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduAccess</title>
+  <link rel="stylesheet" href="../Sitio Etica y Deontologia Profesional/Estilos/style.css">
+  </head>
+<body>
+  <header>
+    <h1>EduAccess</h1>
+  </header>
+  
+  <main>  
+    <section id="help-section">
+      <h2>Ayuda y Tutoriales</h2>
+      <p>Bienvenido a EduAccess. Aquí encontrarás información sobre cómo utilizar las características de la aplicación:</p>
+      <ul>
+        <li><strong>Configuraciones:</strong> Ajusta el tamaño del texto y el tema de alto contraste para mejorar la legibilidad.</li>
+        <li><strong>Calendario:</strong> Agrega eventos y establece la fecha y hora para que puedas recordar tus actividades.</li>
+        <li><strong>Texto a Voz:</strong> Convierte el texto en voz para escuchar el contenido escrito.</li>
+        <li><strong>Traducción:</strong> Traduce texto a diferentes idiomas utilizando el selector de idiomas.</li>
+        <li><strong>Chat:</strong> Participa en el chat para comunicarte con otros usuarios.</li>
+      </ul>
+      <button id="read-help">Leer Ayuda</button>
+    </section>
+
+    <section id="settings-section">
+      <h2>Configuraciones</h2>
+      
+      <div class="settings-group">
+        <div id="text-size-adjust" tabindex="0">
+          <h3>Ajuste de Tamaño de Texto</h3>
+          <button class="text-size-button" data-size="small" tabindex="1">Pequeño</button>
+          <button class="text-size-button" data-size="medium" tabindex="2">Mediano</button>
+          <button class="text-size-button" data-size="large" tabindex="3">Grande</button>
+        </div>
+        
+        <div id="theme-switch-section" tabindex="0">
+          <h3>Tema de Alto Contraste</h3>
+          <label for="theme-switch">Invertir colores</label>
+          <input type="checkbox" id="theme-switch" tabindex="4"> Click Acá
+        </div>
+
+        <div id="feedback-section">
+          <h3>Configuraciones de Feedback Auditivo</h3>
+          <label for="feedback-sound">Activar sonido de feedback:</label>
+          <input type="checkbox" id="feedback-sound" checked> Click Acá
+        </div>
+      </div>
+    </section>  
+
+    <section id="calendar-section">
+      <h2>Calendario</h2>
+      <div class="input-container">
+        <input type="text" id="event-input" placeholder="Agregar evento..." tabindex="5">
+        <input type="datetime-local" id="event-datetime" placeholder="Fecha y hora del evento" tabindex="6">
+      </div>
+      <button id="add-event-button" tabindex="7">Agregar Evento</button>
+      <ul id="event-list"></ul>
+    </section>
+    
+    <section id="text-to-speech">
+      <h2>Texto a Voz</h2>
+      <textarea id="text-input" class="text-to-speech" placeholder="Escribe el texto aquí..." tabindex="8"></textarea>
+      <button id="speak-button" tabindex="9">Escuchar Texto</button>
+      <button id="start-recognition" tabindex="10">Iniciar Reconocimiento de Voz</button>
+    </section>
+
+    <section id="translate-section">
+      <h2>Traducción de Texto</h2>
+      <textarea id="text-input-translate" class="translate-section" placeholder="Escribe el texto para traducir..." tabindex="11"></textarea>
+      <select id="language-select" tabindex="12">
+        <option value="">Selecciona un idioma</option>
+        <option value="de">Alemán</option>
+        <option value="es">Español</option>
+        <option value="fr">Francés</option>
+        <option value="en">Inglés</option>
+        <option value="it">Italiano</option>
+        <option value="pt">Portugués</option>
+      </select>
+      <button id="translate-button" tabindex="13">Traducir Texto</button>
+      <p id="translation-result"></p>
+    </section>
+
+    <section id="chat">
+      <h2>Chat</h2>
+      <div id="chat-window"></div>
+      <input type="text" id="user-name" placeholder="Tu nombre..." tabindex="14">
+      <input type="text" id="chat-input" placeholder="Escribe un mensaje..." tabindex="15">
+      <button id="send-button" tabindex="16">Enviar</button>
+    </section>
+
+  <script src="../Sitio Etica y Deontologia Profesional/Js/text-to-speech.js"></script>
+  <script src="../Sitio Etica y Deontologia Profesional/Js/speech-recognition.js"></script>
+  <script src="../Sitio Etica y Deontologia Profesional/Js/chat.js"></script>
+  <script src="../Sitio Etica y Deontologia Profesional/Js/text-size-adjust.js"></script>
+  <script src="../Sitio Etica y Deontologia Profesional/Js/theme-switch.js"></script>
+  <script src="../Sitio Etica y Deontologia Profesional/Js/translate.js"></script>
+  <script src="../Sitio Etica y Deontologia Profesional/Js/calendar.js"></script>
+  <script src="../Sitio Etica y Deontologia Profesional/Js/app.js"></script>
+  <script src="../Sitio Etica y Deontologia Profesional/Js/feedback-auditivo.js"></script>
+</body>
+</html>
