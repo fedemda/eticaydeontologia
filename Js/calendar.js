@@ -46,8 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
   function displayEvent(eventObj) {
     const eventElement = document.createElement('li');
 
-    // Formatear fecha y hora en español (Argentina) sin "horas"
-    const eventDatetimeFormatted = new Date(eventObj.datetime).toLocaleString('es-AR', { hour: '2-digit', minute: '2-digit' });
+    // Formatear fecha y hora en español (Argentina) para mostrar fecha y hora
+    const eventDatetimeFormatted = new Date(eventObj.datetime).toLocaleString('es-AR', { 
+      day: '2-digit', 
+      month: '2-digit', 
+      year: 'numeric', 
+      hour: '2-digit', 
+      minute: '2-digit' 
+    });
     
     eventElement.innerHTML = `
       <strong>Evento:</strong> ${eventObj.event} <br>
